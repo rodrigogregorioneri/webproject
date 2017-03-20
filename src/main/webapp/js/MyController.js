@@ -1,6 +1,8 @@
 (function ($app) {
-  teste
+
   
-  
+  app.controller('MyController', function(){
+    
+  });
   
 } (app));
