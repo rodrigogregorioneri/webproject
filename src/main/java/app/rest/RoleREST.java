@@ -162,9 +162,9 @@ public class RoleREST {
    * ManyToMany Relationship DELETE
    * @generated
    */  
-  @RequestMapping(method = RequestMethod.DELETE,value="/{roleId}/User/{userId}")
-  public void deleteUser(@PathVariable("roleId") java.lang.String roleId, @PathVariable("userId") java.lang.String userId) {
-    this.roleBusiness.deleteUser(roleId, userId);
+  @RequestMapping(method = RequestMethod.DELETE,value="/{roleId}/User/{UserId}")
+  public void deleteUser(@PathVariable("roleId") java.lang.String roleId, @PathVariable("UserId") java.lang.String UserId) {
+    this.roleBusiness.deleteUser(roleId, UserId);
   }  
 
 
@@ -173,9 +173,9 @@ public class RoleREST {
    * 
    * @generated
    */
-  @RequestMapping(method = RequestMethod.GET, value = "/{roleId}")
-  public Role get(@PathVariable("roleId") java.lang.String roleId) throws Exception {
-    return roleBusiness.get(roleId);
+  @RequestMapping(method = RequestMethod.GET, value = "/{roleid}")
+  public Role get(@PathVariable("roleid") java.lang.String roleid) throws Exception {
+    return roleBusiness.get(roleid);
   }
 
 }

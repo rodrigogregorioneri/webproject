@@ -38,6 +38,7 @@ public class User implements Serializable {
    * @generated
    */
   @Id
+  @Column(name = "id", nullable = false, insertable=true, updatable=true)
   private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
   
   /**
@@ -64,7 +65,7 @@ public class User implements Serializable {
   @Column(name = "theme", nullable = true, unique = false, insertable=true, updatable=true)
   private java.lang.String theme;
   
-    /**
+  /**
    * Construtor
    * @generated
    */

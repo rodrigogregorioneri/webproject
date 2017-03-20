@@ -25,20 +25,21 @@ public class UserRole implements Serializable {
    * @generated
    */
   @Id
+  @Column(name = "id", nullable = false, insertable=true, updatable=true)
   private java.lang.String id = UUID.randomUUID().toString().toUpperCase();
   
   /**
   * @generated
   */
   @ManyToOne
-  @JoinColumn(name="fk_user", referencedColumnName = "id", insertable=true, updatable=true)
+  @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
   private User user;
   
   /**
   * @generated
   */
   @ManyToOne
-  @JoinColumn(name="fk_role", referencedColumnName = "id", insertable=true, updatable=true)
+  @JoinColumn(name="fk_role", nullable = true, referencedColumnName = "id", insertable=true, updatable=true)
   private Role role;
   
   /**

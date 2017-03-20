@@ -4,9 +4,10 @@
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>java:comp/env/jdbc/main</jta-data-source>
         <class>app.entity.UserRole</class>
+        <class>app.entity.Class1</class>
         <class>app.entity.User</class>
         <class>app.entity.Role</class>
-            <properties>
+        <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:file:~/Webproject;AUTO_SERVER=TRUE;DATABASE_TO_UPPER=FALSE;ALIAS_COLUMN_NAME=TRUE"/>
             <property name="javax.persistence.jdbc.user" value="root"/>

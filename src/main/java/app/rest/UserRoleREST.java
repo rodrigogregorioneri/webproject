@@ -122,9 +122,9 @@ public class UserRoleREST {
    * 
    * @generated
    */
-  @RequestMapping(method = RequestMethod.GET, value = "/{userRoleId}")
-  public UserRole get(@PathVariable("userRoleId") java.lang.String userRoleId) throws Exception {
-    return userRoleBusiness.get(userRoleId);
+  @RequestMapping(method = RequestMethod.GET, value = "/{userRoleid}")
+  public UserRole get(@PathVariable("userRoleid") java.lang.String userRoleid) throws Exception {
+    return userRoleBusiness.get(userRoleid);
   }
 
   /**

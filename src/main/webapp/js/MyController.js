@@ -2,7 +2,7 @@
 
   
   app.controller('MyController', function(){
-    
+    teste
   });
   
 } (app));
